@@ -4,13 +4,13 @@ Exercícios
 1) Mude/defina a forma da tartaruga         ok
 2) Mude a ordem das cores                   ok
 3) Mude a largura da linha                  ok
-4) Faça a tartaruga desenhar dois quadrados 
+4) Faça a tartaruga desenhar dois quadrados ok
 """
 
 import turtle
 
 turtle = turtle.Turtle()
-turtle.shape('squard')
+turtle.shape('circle')
 turtle.pensize(15)
 
 for color in [ 'pink','black','blue', 'red' ]:
@@ -18,3 +18,12 @@ for color in [ 'pink','black','blue', 'red' ]:
     turtle.forward(100)
     turtle.right(90)
 
+turtle.penup()    
+turtle.left(90)
+turtle.forward(100)
+turtle.pendown()
+
+for color in ['red','blue','black','pink' ]:
+    turtle.color(color)
+    turtle.forward(100)
+    turtle.right(90)
