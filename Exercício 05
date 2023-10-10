@@ -1,10 +1,10 @@
 """
 Exercícios
 
-1) Aumente o tamanho do envelope
-2) Use formas diferentes da tartaruga enquanto faz a aba e enquanto faz o corpo
-3) Deixe o envelope colorido
-4) Reduza o aba do envelope
+1) Aumente o tamanho do envelope                                                     ok
+2) Use formas diferentes da tartaruga enquanto faz a aba e enquanto faz o corpo      ok
+3) Deixe o envelope colorido                                                         ok
+4) Reduza o aba do envelope                                                          ok
 """
 
 import turtle
@@ -13,9 +13,16 @@ turtle = turtle.Turtle()
 turtle.color('red')
 
 for _ in [1, 2, 3]:
-    turtle.forward(100)
+    turtle.shape('circle')
+    turtle.forward(50)
     turtle.right(120)
-
-for _ in [1, 2, 3, 4]:
-  turtle.forward(100)
+turtle.shape('turtle')
+turtle.color('purple')
+for _ in [1, 2]:
+  turtle.forward(250)
+  turtle.right(90)
+turtle.forward(400)
+turtle.right(90)
+for _ in [1, 2]:
+  turtle.forward(250)
   turtle.right(90)
