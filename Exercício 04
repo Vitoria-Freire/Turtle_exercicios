@@ -1,23 +1,23 @@
 """
 Exercícios
 
-1) Acrescente ao menos mais duas cores à lista de cores possíveis    ok
+1) Acrescente ao menos mais duas cores à lista de cores possíveis     ok
 Veja os nomes de cores válidos em: https://pt.wikipedia.org/wiki/Lista_de_cores
 (coluna Nome Web)
-2) Faça o triângulo apontar para cima
+2) Faça o triângulo apontar para cima                                 ok
 3) Remova a cor vermelha da lista de cores possíveis                  ok
-4) Mude a largura da linha                                            
+4) Mude a largura da linha                                            ok 
 """
 
 import turtle
 import random
 
 turtle = turtle.Turtle()
-colors = ['purple', 'blue', 'pink', 'black']
+colors = ['purple','blue','pink','black']
 
 for _ in [1, 2, 3]:
     color = random.choice(colors)
     turtle.color(color)
+    turtle.pensize(5)
     turtle.forward(100)
-    turtle.right(120)
-
+    turtle.left(120)
