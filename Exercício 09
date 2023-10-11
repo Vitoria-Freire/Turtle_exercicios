@@ -13,5 +13,5 @@ colores = ['purple', 'blue', 'yellow', 'green', 'pink', 'red', 'cyan', 'orange',
 for c in range(360):
     color = random.choice(colores)
     turtle.color(color)
-    turtle.forward(2)
+    turtle.forward(3)
     turtle.right(1)
