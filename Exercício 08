@@ -1,9 +1,9 @@
 """
 Exercicios
 
-1) Acrescente cores
-2) Mude a largura da linha
-3) Aumente a quantidade de linhas
+1) Acrescente cores                ok
+2) Mude a largura da linha         ok
+3) Aumente a quantidade de linhas  ok
 """
 
 import turtle
@@ -11,10 +11,11 @@ import random
 
 turtle = turtle.Turtle()
 
-colors = ['purple', 'blue', 'yellow', 'green', 'pink']
-for _ in range (8):
+colors = ['purple', 'blue', 'yellow', 'green', 'pink', 'red', 'black']
+for _ in range (12):
     color = random.choice(colors)
+    turtle.pensize(5)
     turtle.color(color)
     turtle.forward(100)
     turtle.backward(100)
-    turtle.right(45)
+    turtle.right(30)
