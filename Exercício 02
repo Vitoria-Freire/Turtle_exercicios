@@ -9,8 +9,8 @@ Exercícios
 import turtle
 
 turtle = turtle.Turtle()
-turtle.color('blue')
 turtle.shape('circle')
+turtle.color('blue')
 turtle.forward(250)
 turtle.left(90)
 turtle.forward(250)
