@@ -1,15 +1,17 @@
 """
 Exercicios:
 
-1) Faça cada passo da tartaruga ter uma cor diferente
-2) Aumente/diminua o diâmetro do círculo
+1) Faça cada passo da tartaruga ter uma cor diferente   ok
+2) Aumente/diminua o diâmetro do círculo                ok
 """
-
 import turtle
+import random
 
 turtle = turtle.Turtle()
+colores = ['purple', 'blue', 'yellow', 'green', 'pink', 'red', 'cyan', 'orange', 'teal']
 
 for c in range(360):
-    turtle.color('red')
-    turtle.forward(1)
+    color = random.choice(colores)
+    turtle.color(color)
+    turtle.forward(2)
     turtle.right(1)
