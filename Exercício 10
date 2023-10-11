@@ -1,28 +1,65 @@
 """
 Exercícios
 
-1) Faça cada quadrado ter uma cor
-2) Faça cada quadrado com um formato diferente da tartaruga
-3) Faça os quadrados não se tocarem
-4) Desenhe um quadrado maior ao redor dos demais quadrados
+1) Faça cada quadrado ter uma cor                              ok
+2) Faça cada quadrado com um formato diferente da tartaruga    ok
+3) Faça os quadrados não se tocarem                            ok
+4) Desenhe um quadrado maior ao redor dos demais quadrados     ok
 """
 
 import turtle
 
 turtle = turtle.Turtle()
+turtle.pensize(5)
 
 for _ in range(4):
+    turtle.color('blue')
     turtle.forward(100)
     turtle.right(90)
 
-for _ in range(4):
-   turtle.left(90)
-   turtle.forward(100)
+turtle.penup()
+turtle.backward(150)
+turtle.pendown()
 
 for _ in range(4):
-   turtle.forward(100)
+   turtle.color('cyan')
+   turtle.shape('circle')
    turtle.left(90)
+   turtle.forward(100)
+    
+turtle.penup()
+turtle.right(90)
+turtle.fd(150)
+turtle.pendown()
 
 for _ in range(4):
+   turtle.color('teal')
+   turtle.shape('triangle')
+   turtle.forward(100)
+   turtle.left(90)
+    
+turtle.penup()
+turtle.right(90)
+turtle.fd(150)
+turtle.pendown()
+
+for _ in range(4):
+   turtle.color('purple')
+   turtle.shape('turtle')
    turtle.right(90)
    turtle.forward(100)
+
+turtle.penup()
+turtle.fd(150)
+turtle.right(90)
+turtle.backward(150)
+
+turtle.pendown()
+
+for _ in range(2):
+   turtle.color('purple')
+   turtle.shape('turtle')
+   turtle.forward(600)
+   turtle.right(90)
+   turtle.forward(600)
+   turtle.right(90)
